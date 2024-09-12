@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 25/06/2022</p>
+        <h1 class="post-h1">Trải nghiệm Công Viên Nước Hòn Thơm | Aquatopia Water Park, xịn xò nhất Đông Nam Á</h1>
+
+        <div>
+            <p><strong>Công viên nước Hòn Thơm Aquatopia</strong> được đầu tư bởi tập đoàn Sun Group bắt đầu hoạt động vào 28/12/2019 tại<strong>Hòn Thơm</strong>là công viên nước theo chủ đề hiện đại nhất đông nam á. Cùng với việc đi <strong>Cáp treo sang Hòn Thơm</strong> sẽ là combo trải nghiệm vô vùng tuyệt vời khi đến với Đảo Phú Quốc.</p>
+            <p>Nửa ngày trải nghiệm <strong>Công Viên Nước Hòn Thơm | Aquatopia Water Park </strong>của mình mời các bạn tham khảo xem bên trong có các trò chơi gì hấp dẫn nhé. Kèm theo kết hợp sang bãi trào Hòn Thơm thì chuẩn bài luôn nha.</p>
+
+            <img src="https://phuot3mien.com/wp-content/uploads/2020/11/cong-vien-nuoc-hon-thom.jpg" alt="" class="post-img-content">
+
+            <p class="entry-title"><strong>WORLD TRAVEL AWARDS </strong>Được ví là “<strong>Oscar của ngành du lịch</strong>”, được tổ chức lần thứ 27 vào ngày 3/11 vừa qua.&nbsp; Nơi vinh danh các hạng mục giải thưởng về du lịch khu vực châu Á cho những thương hiệu xuất sắc năm 2020.</p>
+            <p><strong>Công viên nước Aquatopia Hòn Thơm</strong>&nbsp;thuộc khu du lịch <strong>Sun World Hon Thom Nature Park</strong> đã vinh dự giành chiến thắng ngoạn mục với giải thưởng “<strong>Công viên nước hàng đầu châu Á 2020</strong>”.</p>
+
+            <img src="https://phuot3mien.com/wp-content/uploads/2020/11/cong-vien-nuoc-hon-thom-aquatopia-part.jpg" alt="" class="post-img-content">
+            <p>Với những nỗ lực kiến tạo xậy dựng một công viên nước quy mô lớn và hiện đại hàng đầu Châu Á, mang đến những trải nghiệm mới lạ và khác biệt. Sun World Hon Thom Nature Park vô cùng xứng đáng với giải thưởng trên</p>
+            <p>Theo thông tin mình tiềm hiểu được, Sun World đang xây dựng khu nghỉ dưỡng ngay cáp treo Ga An Thới, sau đó có thể sẽ là bên <strong>Hòn Thơm</strong> với công trình chất lượng, đẳng cấp, khác biệt. Bạn sẽ được sử dụng những dịch vụ, trải nghiệm du lịch độc đáo ngay tại trên Đảo Hòn Thơm. Góp phần đưa <a href="https://phuot3mien.com/mien-nam/kien-giang/phu-quoc" target="_blank" rel="noopener noreferrer"><strong>Đảo Ngọc Phú Quốc</strong></a> ngày càng vươn cao, vươn xa hơn trên bản đồ du lịch quốc tế.</p>
+
+            <h2 class="post-h2">Hướng dẫn mua vé Online – tiện lợi – giá rẻ hơn mua tại quầy</h2>
+            <p>Nếu bạn mua vé ngay tại cổng bảng giá vé <strong>Công Viên Nước Hòn Thơm</strong> sẽ được tính như bên dưới:</p>
+            <table style="border-collapse: collapse; width: 100%; height: 96px;">
+                <tbody>
+                <tr style="height: 24px;">
+                <td style="width: 33.3333%; height: 24px;"><strong>Loại vé</strong></td>
+                <td style="width: 33.3333%; height: 24px;">Giá vé người lớn</td>
+                <td style="width: 33.3333%; height: 24px;">Giá vé trẻ em (1m – 1m4)</td>
+                </tr>
+                <tr style="height: 24px;">
+                <td style="width: 33.3333%; height: 24px;">Vé Công Viên Nước Aquatopia</td>
+                <td style="width: 33.3333%; height: 24px;">200.000đ</td>
+                <td style="width: 33.3333%; height: 24px;">150.000đ</td>
+                </tr>
+                <tr style="height: 24px;">
+                <td style="width: 33.3333%; height: 24px;">Combo vé cáp treo + vé công viên nước</td>
+                <td style="width: 33.3333%; height: 24px;">400.000đ</td>
+                <td style="width: 33.3333%; height: 24px;">300.000đ</td>
+                </tr>
+                <tr style="height: 24px;">
+                <td style="width: 33.3333%; height: 24px;">Combo vé cáp treo + Công viên nước + Buffet ăn trưa</td>
+                <td style="width: 33.3333%; height: 24px;">600.000đ</td>
+                <td style="width: 33.3333%; height: 24px;">400.000đ</td>
+                </tr>
+                </tbody>
+                </table>
+
+                <p><b>Lưu ý:</b>&nbsp;Trẻ em có chiều cao dưới 1m được miễn phí vé cáp treo và vé vào cửa công viên nước.</p>
+                <p><strong>MUA ONLINE RẺ HƠN 20% – Tin mình đi . Mình đã tham khảo qua KKday và Klook giá vé cực rẻ luôn,&nbsp;</strong>mua online không cần sếp hàng, giá lại rẻ, trình vé điện tử là vào cửa</p>
+
+                <h2 class="post-h2">Lưu ý khi vào công viên nước Hòn Thơm Aquatopia</h2>
+                <p>Một số lưu ý bạn cần biết trước khi vào <strong>công viên nước Aquatopia</strong> để tận hưởng trọn vẹn chuyến đi:</p>
+                <ul>
+                    <li>Không mang theo đồ ăn và nước uống vào trong khuôn viên của công viên nước.</li>
+                    <li>Mỗi khu trò chơi sẽ có đội ngũ cứu hộ của công viên nước hỗ trợ, thông báo ngay cho họ biết nếu có trục trặc hoặc sự cố nếu có</li>
+                    <li>Thời gian mở cửa từ 10h00 – 17h00 hàng ngày. Nên bạn cần phải chú ý sắp xếp thời gian vui chơi để tận hưởng trọn vẹn thời gian vui chơi tại công viên nước.</li>
+                </ul>
+
+                <h2 class="post-h2">Khám phá 21 trò chơi tại Công viên nước Aquatopia</h2>
+                <p><strong>Công viên nước Aquatopia Hòn Thơm</strong> là một công trình đầy sáng tạo và mới lạ – được xây dựng theo chủ đề hoang đảo thổ dân. Tạo ấn tượng với khách tham quan với 6 khu vực chủ đề hấp dẫn và hệ thống 21 trò chơi hiện đại</p>
+                <p>Trong đó, 3 trò chơi đầy mới lạ như: <strong>Phi long cưỡi sóng, Cuộc chiến mãng xà, Giao long tuần dương</strong>…. Đưa bạn&nbsp;vào hành trình khám phá đại dương: Hấp dẫn – Bí ẩn – Độc Đáo với vô vàn trải nghiệm mới lạ lần đầu tiên có tại Việt Nam</p>
+                <h3><span id="1-dong-song-lo-dang">1. Dòng sông lơ đãng</span></h3>
+                <h3><span id="2-thuy-liem-dong">2. Thủy liêm động</span></h3>
+                <h3><span id="2-thuy-liem-dong">2. Thủy liêm động</span></h3>
+                <h3><span id="4-con-loc-nhiet-doi">4. Cơn lốc nhiệt đới</span></h3>
+                <h3><span id="5-hang-dong-song-ngam">5. Hang động sóng ngầm</span></h3>
+                <h3><span id="6-hem-nui-ngoc-trai">6. Hẻm núi Ngọc trai</span></h3>
+                <h3><span id="7-sao-bien-tranh-tai"><span id="7_sao_bien_tranh_tai">7. Sao biển tranh tài</span></span></h3>
+                <h3><span id="8-vu-dieu-ca-chuon">8. Vũ điệu cá chuồn</span></h3>
+                <h3><span id="9-ran-bien-ti-hon">9. Rắn biển tí hon</span></h3>
+                <h3><span id="10-mang-xa-phi-lao">10. Mãng xà phi lao</span></h3>
+                <h3><span id="11-xa-vuong-giao-chien">11. Xà vương giao chiến</span></h3>
+                <h3><span id="12-long-xa-noi-gian">12. Long xà nổi giận</span></h3>
+                <h3><span id="13-chan-tinh-quyet-chien">13. Chằn tinh quyết chiến</span></h3>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="cau-rong-da-nang.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="da-lat.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

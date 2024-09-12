@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 25/06/2022</p>
+        <h1 class="post-h1">List 30+ Villa Vũng Tàu đẹp, có hồ bơi, gần biển cho đại gia đình nhóm bạn | 2022</h1>
+
+        <div>
+            <h2 class="post-h2"> Villa Trần Duy – Biệt Thự Luxury 5 – Căn Villa mới toanh đẹp nhất Vũng Tàu</h2>
+            <p>Căn villa nguyên căn siêu đẹp ở Vũng Tàu này cực kỳ sang trọng, hiện đại,đầy đủ tiện nghi, không gian đẹp, thoáng mát. Là một nơi vừa thích hợp cho các nhóm nhỏ và gia đình</p>
+            <p>Hay ngay cả những nhóm lớn hơn chút thì căn biệt thự Vũng Tàu này cũng có thể hoàn toàn phục vụ tốt cho bạn.</p>
+            <p>Kiến trúc vô cùng hiện đại mang đậm phong cách châu Âu, cùng không gian xanh thoáng mát, chắc chắn nơi đây sẽ là một trong những địa điểm nghỉ dưỡng mà du khách không thể bỏ qua</p>
+            <p><strong>Gồm các tiện ích sau:</strong></p>
+            <ul style="height: auto !important;">
+                <li>4 phòng ngủ</li>
+                <li>Phòng khách không gian mở, view hướng ra hồ bơi.</li>
+                <li>Khu vực bếp trang bị đồ dùng cao cấp hiện đại – Khu vực phòng khách có tiện ích karaoke giải trí</li>
+                <li>Khu vực hồ bơi ngoài trời, thoáng mát. Có thể tổ chức những bữa tiệc BBQ ở đây.</li><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9227773123830493" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_5_host" style="border: none; height: 280px; width: 650px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;border:0;width:650px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="650" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9227773123830493&amp;output=html&amp;h=280&amp;adk=3676187560&amp;adf=2838576098&amp;pi=t.aa~a.1916788708~i.7~rp.4&amp;w=650&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1661242889&amp;num_ads=1&amp;rafmt=1&amp;armr=3&amp;sem=mc&amp;pwprc=2908092845&amp;psa=1&amp;ad_type=text_image&amp;format=650x280&amp;url=https%3A%2F%2Fphuot3mien.com%2Fvilla-vung-tau.html&amp;fwr=0&amp;pra=3&amp;rh=163&amp;rw=650&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=27&amp;adsid=ChEI8PWRmAYQo57IiPmEwtaOARI5ACmDfBtQJx3jOtgpdar3DnW7k7TcY0DPyiMqETJ4nwQNltssvlY2nA-e358oBD-ciBMgoyf-9IGW&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA0LjAuNTExMi4xMDIiLFtdLGZhbHNlLG51bGwsIjY0IixbWyJDaHJvbWl1bSIsIjEwNC4wLjUxMTIuMTAyIl0sWyIgTm90IEE7QnJhbmQiLCI5OS4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjEwNC4wLjUxMTIuMTAyIl1dLGZhbHNlXQ..&amp;dt=1661267323330&amp;bpp=6&amp;bdt=1106&amp;idt=7&amp;shv=r20220818&amp;mjsv=m202208160101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Dedc642e6f9b81f09-22528a7b3bd500e5%3AT%3D1658165627%3ART%3D1658165627%3AS%3DALNI_MZqaRWdIO9pdO6f5DEoIGupXe71nA&amp;gpic=UID%3D000006499ecb82d2%3AT%3D1658165627%3ART%3D1661263442%3AS%3DALNI_MZCFxtb_POVl1px7IgdlHiklARIjg&amp;prev_fmts=0x0%2C330x250%2C665x280%2C665x280%2C665x280&amp;nras=5&amp;correlator=266056320020&amp;frm=20&amp;pv=1&amp;ga_vid=221868615.1658165628&amp;ga_sid=1661267323&amp;ga_hid=1485696578&amp;ga_fc=1&amp;u_tz=420&amp;u_his=8&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=302&amp;ady=3578&amp;biw=1519&amp;bih=754&amp;scr_x=0&amp;scr_y=577&amp;eid=44759876%2C44759927%2C44759837%2C44769174&amp;oid=2&amp;psts=AEC3cPIwgXJogbbOmZBJ8GzFOTBMNk5Y8mfGpKmIDE5rm_aN7Ck570dKIPA1qzdcO8SzPwhTfRZGUFGO3Mi1hQ%2CAEC3cPIKP8xDQAdJP64v4EW4Laujul3RlOK8gLk-PBos_2tMKW56kQc3ZxxzQPO66kW_3XAl7Z0lwqYmWCiYCNQ%2CAEC3cPKdiSElH8n5KSy3XU7OG0PkrErXAKobwa2XeJ2Eon-i3qd3dGGy58QcelQS4Np-AJRs3LaukeybYBxqBMw%2CAEC3cPI0t7iXw1ipuyvjW_zDNdFsjeXp6zPYyK-pUmx95ITBS3byxRSCNZGjBzSIAqKUbFtyzKC1g5Qt43rm_So&amp;pvsid=1124496839914457&amp;tmod=1876655327&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fphuot3mien.com%2Fmien-nam%2Fvung-tau%2F&amp;eae=0&amp;fc=1408&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C824%2C1536%2C754&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;ifi=6&amp;uci=a!6&amp;btvi=4&amp;fsb=1&amp;xpc=1lzOlPffqM&amp;p=https%3A//phuot3mien.com&amp;dtd=1712" data-google-container-id="a!6" data-google-query-id="CP_ygIaf3fkCFavKFgUd_oAFSA" data-load-complete="true"></iframe></div></ins></div>
+                <li>Có sân, khu vui chơi trẻ em – Công viên sát cạnh biệt thự, gần bãi tắm Long Cung chỉ với 50m.</li>
+                </ul>
+                <div class="box success  ">
+			
+                    <p><strong>Giá phòng và liên hệ đặt phòng:</strong></p>
+                    <ul>
+                    <li><strong>Ngày thường: 6.500.000 VND</strong></li>
+                    <li><strong>Thứ 6: 7.500.000 VND</strong></li>
+                    <li><strong>Thứ 7: 10.500.000 VND</strong></li>
+                    </ul>
+                    <p>Địa chỉ: R1, Aria resort, bãi Long Cung, Vũng Tàu</p>
+                    <p><strong>HOTLINE đặt phòng: <a href="tel:0906575756">0906575756</a> – <a href="tel:0856983399">0856983399</a></strong></p>
+                    
+                </div>
+            <h2 class="post-h2">2-he-thong-villa-tran-duy-rong-rai-gia-tot-nhat-dip-cuoi-nam</h2>
+            <p>Trần Duy Villa là một hệ thống các căn <strong>Villa Cao Cấp tại Vũng Tàu</strong>. Là địa điểm lưu trú nghỉ dưỡng lý tưởng rất phù hợp cho gia đình hoặc nhóm đoàn Đông:</p>
+            <p><strong>Bao gồm một số căn tiêu biểu như:</strong></p>
+            <p>Liên hệ ngay để được tư vấn: <strong>085 6983399 – 0906575756</strong></p>
+            <tbody>
+                <tr>
+                <td style="width: 50%;"><b>TRAN DUY LUXURY VILLA 3</b><p></p>
+                <p><span style="font-weight: 400;">Địa chỉ : 84/B3 Phan Chu Trinh, Phường 2, thành phố Vũng Tàu</span></p></td>
+                <td style="width: 50%;">– Miễn phí karaoke giải trí – Phòng vui chơi trẻ em<p></p>
+                <p>– 5 phòng ngủ – Nội thất nhà bếp tiêu chuẩn 5 sao</p>
+                <p>Giá từ 7 triệu/ 1 ngày đêm</p></td>
+                </tr>
+                </tbody>
+
+                <h2 class="post-h2">Beach Front Villa – Villa Sát Biển view đẹp ở Vũng Tàu</h2>
+
+                <p>Nhắc đến top những villa sang chảnh bậc nhất Vũng Tàu mà không kể tên <strong>Beach Front Villa</strong> thì thực sự thiếu sót, bởi đây là nơi nghỉ dưỡng lý tưởng được hàng ngàn du khách lựa chọn mỗi năm. Nằm trên cung đường Trần Phú với tầm nhìn tuyệt đẹp hưởng thẳng ra biển, cảnh quan nơi đây tạo nên sự ấn tượng hết sức mạnh mẽ khiến ai cùng đều phải mê mẩn.</p>
+                <p>Kiến trúc Panorama độc đáo với ba mặt hướng biển giúp Beach Front Villa thực sự hòa mình với thiên nhiên, cảm tưởng như bất cứ góc nào ở đây cũng đẹp hoàn hảo. Ánh sáng mặt trời ngập tràn mọi nơi, gió biển thổi vào khắp các ngóc ngách, tạo nên cảm giác vô cùng dễ chịu.</p>
+                <p>Điểm “ăn khách” nhất của <strong>Beach Front Villa</strong> chính là hồ bơi vô cực view biển cực “ngầu” cùng hiên tắm nắng giúp bạn có thể ngắm trọn cảnh sắc Vũng Tàu và tha hồ chụp ảnh sống ảo. Nếu muốn tắm biển thì cũng chỉ cần mở cửa là đã có thể lập tức chạm chân xuống biển.</p>
+                <p>Thiên nhiên bao xung quanh đã hết sức tuyệt mỹ rồi, nội thất ở đây lại mang đậm phong cách sanh chảnh trong phong cách trang trí, kết hợp hai tông màu trắng và xanh cổ vịt tạo nên sự sang trọng và mới lạ. Mỗi phòng ngủ trong Beach Front Villa lại mang một cá tính riêng và tất cả đều view biển, giúp du khách có thể hòa mình vào khung cảnh lãng mạn, nên thơ giữa trời và biển mà vẫn đảm bảo sự riêng tư.</p>
+                <p>Một điểm khiến du khách muốn quay lại Beach Front Villa nhiều lần là đội ngũ nhân viên ở đây cực kỳ nhiệt tình và chu đáo, phục vụ 24/24.</p>
+                <p>Bên cạnh đó là sự tiện nghi với không gian bếp ấm cúng để bạn thoải mái nấu nướng, bếp BBQ ngoài trời để cả nhà cùng nhau tổ chức tiệc nướng,…</p>
+
+                <div class="box success  ">
+			
+                    <p><strong>Liên hệ đặt phòng:</strong></p>
+                    <ul>
+                    <li>Giá Thuê Nguyên Căn: Chỉ từ 1.999.000 VNĐ/đêm</li>
+                    <li>Địa chỉ: Đường Trần Phú, TP. Vũng Tày, Tỉnh Bà Rịa – Vũng Tàu</li>
+                    <li>Số điện thoại: <strong>0943333333</strong> – <strong>0982479999</strong></li>
+                    </ul>
+                    
+                                </div>
+
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="cau-rong-da-nang.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="da-lat.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>

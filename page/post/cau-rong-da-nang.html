@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="du lịch, travel, blog, ăn uống">
+    <meta http-equiv="refresh" content="1800">
+    <meta name="description" content="Blog du lịch khắp mọi nơi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../../images/shortcut-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>H&T Blog</title>
+</head>
+<body id="body" onload="upCmt()" class="respon">
+    <nav class="menu flex" id="my-menu">
+
+        <ul class="flex menu-item col65">
+            <li>
+                <a href="../../index.html">Trang chủ</a>
+            </li>
+
+            <li>
+                <a href="../pages.html">Bài viết</a>
+            </li>
+
+            <li class="sub">
+                <a href="../travel.html">Du lịch</a>
+
+                <ul class="sub-menu">
+                    <li class="menu-lv2">
+                        <a href="#">Trong nước</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/da-lat.html">Đà Lạt</a>
+                            </li>
+                            <li>
+                                <a href="#">Vũng Tàu</a>
+                            </li>
+                            <li>
+                                <a href="#">Nha Trang</a>
+                            </li>
+                            <li>
+                                <a href="../travel.html">Xem thêm...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-lv2">
+                        <a href="#">Nước ngoài</a>
+                        <ul class="sub-menu-lv2">
+                            <li>
+                                <a href="../post/paris.html">Paris</a>
+                            </li>
+                            <li>
+                                <a href="#">ThaiLand</a>
+                            </li>
+                            <li>
+                                <a href="#">England</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../post/meo-vat-du-lich.html">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="../picture.html">Hình ảnh</a>
+            </li>
+
+            <li>
+                <a href="../about.html">H&T Blog</a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex no-mobile">
+            <form action="" id="search-box">
+                <input type="text" name="" id="search-text" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <ul class="social flex col15 no-mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="social flex col15 mobile">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="find col20 flex mobile">
+            <form action="" id="search-box-mobile">
+                <input type="text" name="" id="search-text-mobile" placeholder="Bạn muốn tìm gì?" required>
+                <button id="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="l-navbar" id="navbar">
+        <div class="nav">
+            <div>
+                <a href="../../index.html" class="nav__logo">
+                    <img src="../../images/logo_nbg.svg" alt="logo" class="nav__logo-icon">
+                    <span class="nav__logo-text">H&T Blog</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <ul class="nav__list">
+                    <a href="../../index.html" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i>
+                        <span class="nav__text">Trang chủ</span>
+                    </a>
+
+                    <a href="../pages.html" class="nav__link">
+                        <i class="fa-solid fa-pen-to-square nav__icon"></i>
+                        <span class="nav__text">Bài viết</span>
+                    </a>
+
+                    <a href="../travel.html" class="nav__link menu-toggle">
+                        <i class="fa-solid fa-plane-departure nav__icon"></i>
+                        <span class="nav__text">Du lịch</span>
+
+                    </a>
+
+                    <a href="../picture.html" class="nav__link">
+                        <i class="fa-solid fa-image nav__icon"></i>
+                        <span class="nav__text">Hình Ảnh</span>
+                    </a>
+
+                    <a href="../about.html" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <span class="nav__text">H&T Blog</span>
+                    </a>
+                </ul>
+            </div>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket nav__icon"></i>
+                <span class="nav__text">Đóng</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="afmenu">
+        <a href="../../index.html">Về trang chủ</a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../../images/logo_nbg.svg" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="all-post">
+
+        <p class="post-date-up">Đăng ngày: 20/08/2022</p>
+        <h1 class="post-h1">Cầu Rồng Đà Nẵng – top những cây cầu đẹp nhất thế giới nên check in</h1>
+        
+        <div>
+            
+            <p><strong>Đà Nẵng</strong> không chỉ được du khách gần xa yêu mến bởi những danh thắng nổi tiếng, các gian hàng ẩm thực đậm đà mà còn bởi những cây cầu “<strong>độc nhất vô nhị</strong>”. Và mình muốn giới thiệu cho các bạn về <strong>Cầu Rồng Đà Nẵng</strong> trong bài viết này.</p>
+            <p>Ngoài ra không thể không nhắc đến các cây <strong>Cầu quay sông Hàn</strong>, <strong>cầu dây Trần Thị Lý</strong>, <strong>cầu Thuận Phước</strong> hoặc cầu đi bộ Nguyễn Văn Trỗi. Tuy nhiên, nổi bật nhất, ấn tượng nhất trong lòng khách du lịch ngay lần đầu tiên đến thăm đó chính là cây <strong>Cầu Rồng Đà Nẵng</strong> rực rỡ giữa dòng sông Hàn thơ mộng.</p>
+            <h2 class="post-h2">Cầu Rồng – niềm tự hào của người dân Đà Nẵng</h2>
+
+            <p>Nằm ngay trung tâm <strong>thành phố Đà Nẵng</strong>, cầu Rồng từ khi được xây dựng đã trở thành niềm tự hào của người dân xứ Đà thành. Cây cầu có hình dáng vô cùng đặc biệt với kiến trúc là hình một <strong>con Rồng</strong> thời Lý.</p>
+
+            <img src="../../images/post/page/dn1-min.jpg" alt="" class="post-img-content">
+
+            <p><strong>Đầu Rồng</strong> hướng ra biển như khát vọng của người dân <strong>Đà Nẵng</strong> vươn cao vươn xa ra biển lớn của thế giới. Từ đó thể hiện ước mơ thành phố đáng sống này mãi trường tồn, phồn vinh, sừng sững cùng với thời gian và mãi mãi là biểu tượng tươi đẹp trong lòng du khách gần xa.</p>
+            <p>Được khánh thành và thông xe đúng ngày giải phóng <strong>Đà Nẵng</strong>, cầu Rồng đánh dấu cho khoảng thời gian Đà Nẵng chuyển mình, trưởng thành và phát triển sau 38 năm. Trở thành cây cầu dạng vòm thép đơn đầu tiên ở Việt Nam. Điều đặc biệt của cầu Rồng là có đến 6 làn xe chạy.</p>
+            <p>Vì thế, khi đi trên cầu, người lưu thông sẽ cảm thấy vô cùng thoải mái bởi sự thông thoáng của cấy cầu. Hệ thống đèn LED gồm 15.000 bóng đèn được lắp ráp khá công phu và độc đáo.</p>
+            <p>Về đêm, chiếc cầu như sáng rực cả một khoảng trời. Nhìn từ xa đã có thể dễ dàng tìm thấy hình ảnh con Rồng như đang bay lượn giữa trời xanh, trở thành một trong 30 chiếc cầu đẹp và quyến rũ nhất thế giới. Thu hút du khách gần xa đến tham quan và khám phá.</p>
+
+            <img src="../../images/post/page/dn3-min.jpg" alt="" class="post-img-content">
+
+            <h2 class="post-h2">Những nét đặc biệt của cầu Rồng</h2>
+
+            <p>Với chiều rộng là 37,5m, &nbsp;chiều dài lên đến 666m cùng thiết kế vô cùng đặc biệt và độc đáo, cầu Rồng trở thành đia điểm du lịch nổi tiếng khi bạn ghé thăm <strong>thành phố Đà Nẵng</strong>. Tuy nhiên, nét đặc sắc nhất của chiếc&nbsp; cầu này chính là nó có thể phun lửa và phun nước.</p>
+            <p>Cứ đến cuối tuần, đến hẹn lại lên, lúc 21h người dân gần xa lại nô nức kéo đến xem <strong>Rồng</strong> phun lửa phun nước. Thời gian cầu Rồng phun lửa và phun nước khoảng tầm 5 phút. Trong đó, phun lửa trước và phun nước sau.</p>
+            <p>Nhìn từ xa, <strong>hình ảnh con Rồng</strong> lại càng trở nên kì vĩ hơn khi những hòn lửa vàng rực được phun ra từ <strong>miệng Rồng</strong>.</p>
+            <img src="../../images/post/page/dn2-min.jpg" alt="" class="post-img-content">
+
+            <p>Hay đậm dấu ấn tâm linh khi hàng ngàn sợi nước phun ra như cầu mong mưa thuận gió hòa, cuộc sống ấm no, hạnh phúc. Có lẽ vì những ý nghĩa đó mà bất cứ ai khi đến <strong>Đà Nẵng</strong> cũng thu xếp một lần đến chứng kiến hình ảnh đẹp đẽ này, cầu mong những điều may mắn sẽ đến với bản thân và gia đình.</p>
+            <p>Chỉ như vậy thôi, cầu Rồng đã có thể thu hút khách du lịch từ mọi miền đất nước đến để tham quan. Thậm chí khách du lịch nước ngoài xem đây là một địa điểm không thể bỏ lỡ.</p>
+            <p>Vậy tại sao bạn không đến và trải nghiệm cảm giác thú vị khi nhìn ngắm một con Rồng thép có thể phun lửa phun nước?</p>
+
+            <h2 class="post-h2">Ngắm cầu Rồng phun lửa và phun nước vào tối thứ 7 hàng tuần</h2>
+
+            <p><strong>Cứ đến 21h vào thứ 7 và chủ nhật</strong>, các tuyến đường lên cầu Rồng sẽ được chặn lại, các phương tiện giao thông sẽ tạm ngừng di chuyển để ưu tiên cho khoảnh khắc ý nghĩa này. Vì vậy, bạn có thể dễ dàng lên cầu, thoải mái chiêm ngưỡng và chụp hình để lưu lại kỉ niệm đáng nhớ này.</p>
+            <p>Được đứng trên mình Rồng, giữa đêm rực rỡ ánh đèn của <strong>thành phố Đà Nẵng</strong> xinh đẹp, ngay giữa dòng sông Hàn tươi mát thơ mộng và ngắm nhìn Rồng phun lửa phun nước thì còn gì tuyệt vời hơn nữa.</p>
+            <p>Bên cạnh đứng ở trên cầu, bạn cũng có thể đứng dưới chân cầu Rồng để ngắm Rồng phun lửa phun nước. Tuyến đường Trần Hưng Đạo hoặc đường Bạch Đằng ngay dưới chân cầu sẽ là những địa điểm rất thuận lợi để có thể ngắm toàn cảnh khoảnh khắc cầu Rồng phun lửa và phun nước về đêm.</p>
+            <p>Điểm cộng ở vị trí này là bạn có thể nhìn toàn bộ sự tráng lệ kì vĩ của một con Rồng khổng lồ đang phun nước từ trên cao xuống. Ngoài ra, sau khi xem xong, bạn có thể thoải mái di chuyển đến những địa điểm du lịch xinh đẹp khác gần đó mà không cần phải chờ đợi quá lâu bởi kẹt xe.</p>
+            <p>Đường đi bộ <strong>Bạch Đằng</strong>, cầu Tình yêu trên đường Trần Hưng Đạo hay đơn giản là những hàng quán ven theo sông Hàn sẽ là những nơi dừng chân vô cùng thú vị sau khi nhìn cảnh Rồng phun lửa phun nước xong.</p>
+            <p>Thêm một sự lựa chọn khác để ngắm Rồng phun lửa phun nước nữa mà bạn không nên bỏ qua nhé. Dọc các tuyến đường gần cầu Rồng có rất nhiều các nhà hàng, khách sạn, quán bar hoặc café.</p>
+            <p>Vì vậy, bạn có thể chọn tầng thượng ở một nơi nào đó để vừa thưởng thức hương vị đậm đà của ẩm thực miền Trung, vừa nhìn ngắm khoảnh khắc đầy sự tự hào mà bất cứ ai cũng phải say đắm ngay từ cái nhìn đầu tiên nhé.</p>
+
+            <div class="post-content-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="post-content-comment">
+                <h3>Bình luận</h3>
+
+                <div class="cmts">
+                    <div class="cmt">
+                        <div class="flex">
+                            <div>
+                                <img src="../../images/post/page/avt.jpg" alt="avt">
+                            </div>
+                            <div>
+                                <span>Thằng Quốc Hậu</span>
+                                <br>
+                                <span>19/08/2022</span>
+                                <span>19:55</span>
+                            </div>
+                        </div>
+                        <p>
+                            Bài viết hứu ích!
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Thêm bình luận</h3>
+
+                <div class="tbl">
+                    <form action="">
+                        <div>
+                            <div class="flex cmt-all">
+                                <div class="cmt-name">
+                                    <label for="input-cmt-name">
+                                        Họ và tên<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="text" name="first-name" id="input-cmt-name">
+                                    </div>
+                                </div>
+                                <div class="cmt-email">
+                                    <label for="input-cmt-email">
+                                        Email<sup>(*)</sup>
+                                    </label>
+                                    <div>
+                                        <input type="email" name="email" id="input-cmt-email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmt-message">
+                                <label for="input-cmt-message">Bình luận...</label>
+                                <div>
+                                    <textarea name="message" id="input-cmt-message"></textarea>
+                                </div>
+                            </div>
+                            <div class="cmt-send">
+                                <button type="button" id="btnUpCmt">Đăng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="pre-nex">
+                <div class="pre">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <span><a href="da-lat.html">Bài trước</a></span>
+                </div>
+                <div class="home">
+                    <span><a href="../../index.html">Trang chủ</a></span>
+                </div>
+                <div class="nex">
+                    <span><a href="vung-tau.html">Bài sau</a></span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="my-footer flex">
+            <div class="footer-social">
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Copyright &copy; 2022 | Created by H&T Blog | Powered by H&T Blog</p>
+    </footer>
+
+    <div id="backtop" title="Về đầu trang">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../../js/main.js"></script>
+
+</html>
